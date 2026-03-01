@@ -1,0 +1,11 @@
+torch>=1.12.0
+pytorch-lightning
+numpy
+pandas
+scikit-learn
+scipy
+statsmodels
+einops
+wandb
+PyYAML
+tqdm

@@ -1,0 +1,56 @@
+dataset:
+  in_channels: 51
+  num_workers: 0
+  win_size: 320
+  train_split: 0.6
+  anomaly_ratio: 1.0
+
+exp_params:
+  batch_sizes:
+    stage1: 1024
+    stage2: 4096
+  lr:
+    stage1: 0.001
+    stage2: 0.001
+  linear_warmup_rate: 0.1
+
+trainer_params:
+  grad_clip_norm: 1.0
+  gpus:
+    - 0
+  max_epochs:
+    stage1: 100
+    stage2: 100
+  max_hours:
+    stage1: 12
+    stage2: 12
+  val_check_interval:
+    stage1: 1.0
+    stage2: 1.0
+  temperature: 0.1
+  save_dir: 'cpt'
+
+transformer:
+  stage1_d_model: 128
+  stage2_d_model: 128
+  num_patch: 5
+  dropout: 0.2
+
+VQ:
+  global_codebook_size: 64
+  codebook_size: 512
+  codebook_weight_decay: 0.001
+  kmeans_init: True
+  kmeans_iters: 20
+  threshold_ema_dead_code: 1.
+  vq_strategy: 'ST_VQ'
+  dof: 10.0
+
+decoder:
+  n_heads: 8
+  d_ff: 256
+  n_layers: 3
+  res_attention: True
+
+diffusion:
+  num_timesteps: 100
