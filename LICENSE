@@ -1,4 +1,18 @@
-                    GNU GENERAL PUBLIC LICENSE
+License for Manuscript Review
+
+This repository contains the source code for the paper `RoT-Diff: A Contamination-Resilient and Regime-Adaptive Discrete Diffusion Framework for Time Series Anomaly Detection`. The code is provided solely for the purpose of peer review by the PVLDB program committee.
+
+Restrictions:
+
+No redistribution: You may not redistribute, host, or mirror this code.
+
+Non-commercial: This code cannot be used for any commercial purposes.
+
+No derivative works: You may not modify and republish this code until the paper is officially accepted.
+
+After the formal publication of the paper, this project will be re-licensed under a standard Open Source License (e.g., Apache 2.0).
+                       
+                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
