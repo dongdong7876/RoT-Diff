@@ -292,20 +292,12 @@ def get_loader_segment(data_path, batch_size, win_size=100, step=1, train_split=
         dataset = SMDSegLoader(data_path, win_size, step, train_split, mode)
     elif (data_name == 'MSL'):
         dataset = MSLSegLoader(data_path, win_size, step, train_split, mode)
-    elif (data_name == 'SMAP'):
-        dataset = SMAPSegLoader(data_path, win_size, step, train_split, mode)
     elif (data_name == 'SWaT'):
         dataset = SWaTSegLoader(data_path, win_size, step, train_split, mode)
     elif (data_name == 'PSM'):
         dataset = PSMSegLoader(data_path, win_size, step, train_split, mode)
     elif (data_name == 'WADI'):
         dataset = WADISegLoader(data_path, win_size, step, train_split, mode)
-    elif (data_name == 'GECCO'):
-        dataset = GECCOSegLoader(data_path, win_size, step, train_split, mode)
-    elif (data_name == 'Daphnet'):
-        dataset = DaphnetSegLoader(data_path, win_size, step, train_split, mode)
-    elif (data_name == 'Credit'):
-        dataset = CreditSegLoader(data_path, win_size, step, train_split, mode)
 
     shuffle = False
     if mode == 'train':
